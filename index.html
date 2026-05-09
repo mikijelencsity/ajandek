@@ -834,6 +834,46 @@
     </div>
   </div>
 
+  <!-- Countdown -->
+  <div class="countdown-block reveal-anim">
+    <p class="section-eyebrow">Már csak</p>
+    <div class="countdown-row">
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-days">–</span>
+        <span class="countdown-label">nap</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-hours">–</span>
+        <span class="countdown-label">óra</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-mins">–</span>
+        <span class="countdown-label">perc</span>
+      </div>
+      <span class="countdown-sep">:</span>
+      <div class="countdown-unit">
+        <span class="countdown-num" id="cd-secs">–</span>
+        <span class="countdown-label">mp</span>
+      </div>
+    </div>
+    <p class="countdown-sub">aug. 7. — Szabadka</p>
+  </div>
+
+  <!-- Mit hozz magaddal -->
+  <div class="packlist-section reveal-anim" style="display: none;">
+    <p class="section-eyebrow">Mit hozz magaddal</p>
+    <div class="packlist-grid">
+      <div class="pack-item"><span class="pack-icon">👙</span><span>Fürdőruha</span></div>
+      <div class="pack-item"><span class="pack-icon">🧴</span><span>Kedvenc illatod</span></div>
+      <div class="pack-item"><span class="pack-icon">🎵</span><span>Kedvenc dalaid</span></div>
+      <div class="pack-item"><span class="pack-icon">📵</span><span>Semmi terv</span></div>
+      <div class="pack-item"><span class="pack-icon">🍷</span><span>Jó kedv</span></div>
+      <div class="pack-item"><span class="pack-icon">🫶</span><span>Csak te magad</span></div>
+    </div>
+  </div>
+
   <!-- Message -->
   <div class="message-block reveal-anim">
     <p class="message-text">
@@ -890,7 +930,7 @@
 
 // ── Countdown ──
 function updateCountdown() {
-  const target = new Date('2025-08-07T12:00:00+02:00');
+  const target = new Date('2026-08-07T12:00:00');
   const now = new Date();
   const diff = target - now;
   if (diff <= 0) {
